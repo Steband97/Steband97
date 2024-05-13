@@ -1,0 +1,140 @@
+p {
+    color: black;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    height: 60px;
+}
+
+div#footer {
+    background: #012F46;
+}
+
+.mititulo {
+    color: white;
+}
+
+.horarios {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.container {
+    margin-top: 20px;
+    padding: 2%;
+}
+
+a.enlaces {
+    color:  white;
+}
+.w-100 {
+    width: 100% !important;
+    height: 1%;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.registrate {
+    color: white;
+}
+p {
+    color: white;
+}
+p.pquienesomos {
+    color: white;
+}
+p.pmision {
+    color: black;
+}
+.mititulo {
+    font-size: 22px;
+    margin-top: 14px;
+}
+button.btn.btn-success {
+    margin-top: 5px;
+}
+.form-control-sm {
+    height: calc(1.5em + .5rem + 2px);
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    margin-top: 5px;
+}
+p.pvision {
+    color: black;
+}
+.mititulo {
+    font-size: 22px;
+    margin-top: 14px;
+}
+button.btn.btn-success {
+    margin-top: 5px;
+}
+.form-control-sm {
+    height: calc(1.5em + .5rem + 2px);
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    margin-top: 5px;
+}
+p.pquienessomos {
+    color: black;
+}
+.registrate {
+    font-size: 22px;
+    margin-top: 14px;
+}
+div#titulo {
+    text-align: center;
+}
+.mitituloredes {
+    font-size: 22px;
+    margin-top: 14px;
+    color: white;   
+    margin-left: 18px;
+}
+h6 {
+    color: #012F46;
+    text-align: center;
+}
+H1 {
+    color: #012F46;
+}
+button.btn.btn-outline-success.my-2.my-sm-0 {
+    height: 35px;
+}
+div#FotosTFC {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+img.Adriano {
+    width: 40%;
+    height: 0%;
+    margin-left: 30%;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+.Text-Adriano {
+    color: black;
+    text-align: center;
+}
+
+.Title-Adriano {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 2%;
+    color: #012F46;
+}
+button.btn.btn-outline-success {
+    margin-top: 1%;
+}
