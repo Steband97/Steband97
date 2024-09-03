@@ -1,100 +1,201 @@
+/* Variables */
+:root {
+    --primary-color: #012F46;
+    --secondary-color: #242f49;
+    --text-color-light: white;
+    --btn-success-color: #28a745;
+}
+.img-navbar {
+    margin-bottom: 10px;
+}
+h6{
+    font-size: 18px;
+}
+/* General */
 img {
     vertical-align: middle;
     border-style: none;
     height: 60px;
 }
-
-div#footer {
-    background: #242f49;
+.bg-light {
+    background-color: #f8f9fa00 !important;
+    margin-bottom: -30px;
 }
-
-.mititulo {
-    color: white;
+/* Footer */
+#footer {
+    background-color: var(--secondary-color);
+    padding: 1%;
 }
-
-.horarios {
-    color: white;
-}
-
-p {
-    color: white;
-}
-
-.container {
-    margin-top: 20px;
-    padding: 2%;
-}
-
-a.enlaces {
-    color:  white;
-}
-.w-100 {
-    width: 100% !important;
-    height: 1%;
-}
-a {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: transparent;
-}
-.registrate {
-    color: white;
-}
-p.ptechfucol {
-    color: black;
-}
-h1.tituloprincipal {
-    font-size: 40px;
-}
-.mititulo {
-    font-size: 22px;
-    margin-top: 14px;
-}
-button.btn.btn-success {
-    margin-top: 5px;
-}
-.form-control-sm {
-    height: calc(1.5em + .5rem + 2px);
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem;
-    margin-top: 5px;
-}
-.registrate {
-    font-size: 22px;
-    margin-top: 14px;
-}
-div#titulo {
-    text-align: center;
-}
+.mititulo,
+.horarios,
+p,
+.registrate,
 .mitituloredes {
+    color: var(--text-color-light);
+}
+.mititulo, .registrate, .mitituloredes {
     font-size: 22px;
     margin-top: 14px;
-    color: white;   
-    margin-left: 18px;
-}
-.embed-responsive.embed-responsive-16by9 {
-    border-radius: 1%px;
-    margin-left: 0%;
-    margin-top: 0%;
-    width: 100%;
-}
-.videomavicinicio {
-    padding: 1px;
 }
 h6 {
-    color: #012F46;
+    color: var(--primary-color);
+
+}
+/* Botones */
+button.btn-success {
+    margin-top: 5px;
+}
+button.btn-outline-success {
+    margin: 1% 0 2% 0;
+}
+/* Formularios */
+input[type="email"] {
+    margin-top: 10px;
+}
+li {
+    color: white;
+}
+
+strong {
+    color: white;
+    margin-top: 2%;
+}
+h5 {
+ font-size: 16px;
+ margin-top: 3%;
+}
+.enlaces a {
+    color: white;
+    font-size: 24px; /* Ajusta el tamaño de los iconos si es necesario */
+    margin-right: 10px; /* Espaciado entre los iconos */
+    text-decoration: none; /* Elimina subrayado en los iconos, si hay algún texto adicional */
+  }
+  
+  .enlaces a:hover {
+    color: #f0f0f0; /* Cambia ligeramente el color al pasar el cursor */
+  }
+.imagentfc-footer {
+    margin-top: -7%;
+}
+body {
+    cursor: url('./assets/clic.png'), auto;
+  }
+
+/* Asegura que el carrusel ocupe el 100% del ancho disponible */
+.carousel {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Ajusta la altura de las imágenes para que se vean bien en diferentes tamaños de pantalla */
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Ajusta la posición y el estilo de las descripciones del carrusel */
+  .carousel-caption {
+    bottom: 20px; /* Ajusta la posición vertical si es necesario */
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Estilos de los controles de navegación */
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para los íconos de navegación */
+  }
+  
+  /* Ajusta los márgenes de los controles de navegación */
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Ancho de los controles de navegación */
+  }
+  div#carousel-inicio {
+    border-radius: 16px;
+    padding: 1%;
+    margin-top: 16px;
+}
+
+.carousel-inner {
+    border-radius: 16px;
+    padding: 1%;
+}
+img.d-block.w-100 {
+    border-radius: 16px;
+}
+h3{
+    padding: 5%;
+}
+.img-distribuidores {
+    max-width: 100%; /* Asegura que la imagen no sobrepase el tamaño del contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra permanente para la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  }
+  .img-distribuidores:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el cursor */
+  }
+  h4 {
+    text-align: center;
+    margin-bottom: 20px; /* Añade espacio debajo del título */
+    text-shadow: 0px -1px 3px rgb(255 255 255 / 50%); /* Sombra para el texto */
+  }
+  section#\31 {
+    margin-top: 12px;
+}
+button.btn.btn-dark {
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.img-drone-info {
+    margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para las imágenes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  .img-drone-info:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más profunda en hover */
+  }
+  .alert.alert-danger {
+    background: #ea3949;
+    height: 45px;
     text-align: center;
 }
-button.btn.btn-outline-success.my-2.my-sm-0 {
-    height: 35px;
+
+.video-responsive {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    max-width: 500px; /* Ajusta el tamaño máximo del video para pantallas grandes */
+    border: 2px solid #ddd; /* Opcional: agrega un borde para destacar el video */
+    border-radius: 20px; /* Opcional: agrega bordes redondeados */
+    display: block; /* Asegura que el video se muestre como un bloque */
+    margin: 0 auto; /* Centra el video horizontalmente en su contenedor */
+  }
+  
+  /* Media Query para pantallas grandes */
+  @media (min-width: 992px) { /* Pantallas grandes (escritorios) */
+    .video-responsive {
+      max-width: 600px; /* Ajusta el tamaño máximo del video para pantallas grandes */
+    }
+  }
+  
+  /* Media Query para pantallas de tamaño mediano */
+  @media (min-width: 768px) and (max-width: 991px) { /* Pantallas medianas (tabletas) */
+    .video-responsive {
+      max-width: 500px; /* Tamaño máximo del video para pantallas medianas */
+    }
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 767px) { /* Pantallas pequeñas (teléfonos) */
+    .video-responsive {
+      max-width: 100%; /* Ajusta el video al ancho completo del contenedor */
+    }
+  }
+  section#\32 {
+    margin-top: 20px;
 }
-button.btn.btn-outline-success {
-    margin-top: 1%;
-}
-.embed-responsive.embed-responsive-16by9.videoexpert {
-    width: 50%;
-    height: 50%;
-    border-radius: 20px;
+h4.tecnologia-drone {
+    margin-top: 40px;
 }
