@@ -244,22 +244,6 @@ button.btn.btn-dark.btn-tienda {
   transition: 0.5s ease-in-out;
   width: 100%;
 }
-
-/* Animación para cuando el menú está desplegado */
-.navbar-toggler:not(.collapsed) .animated-icon span:nth-child(1) {
-  transform: translateX(35px);
-  opacity: 0;
-}
-
-.navbar-toggler:not(.collapsed) .animated-icon span:nth-child(2) {
-  transform: translateX(-35px);
-  opacity: 0;
-}
-
-.navbar-toggler:not(.collapsed) .animated-icon span:nth-child(3) {
-  transform: translateX(35px);
-  opacity: 0;
-}
 .btn-tienda i {
   display: inline-block;
   transition: transform 0.2s ease-in-out;
@@ -268,4 +252,116 @@ button.btn.btn-dark.btn-tienda {
 .btn-tienda:hover i {
   transform: rotate(20deg);
 }
+/* Estilos para el botón de hamburguesa */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.animated-icon {
+  display: inline-block;
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+  width: 35px;
+}
+
+.animated-icon span {
+  background-color: #333;
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  margin: 6px 0;
+  transition: 0.4s ease;
+  width: 100%;
+  position: relative;
+}
+
+/* Estilo de la "X" cuando el menú está desplegado */
+.navbar-toggler:not(.collapsed) .animated-icon span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.navbar-toggler:not(.collapsed) .animated-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .animated-icon span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px;
+}
+
+/* Asegura que cuando esté colapsado (inicialmente) sea hamburguesa */
+.navbar-toggler.collapsed .animated-icon span:nth-child(1),
+.navbar-toggler.collapsed .animated-icon span:nth-child(3) {
+  transform: none;
+  top: 0;
+}
+
+.navbar-toggler.collapsed .animated-icon span:nth-child(2) {
+  opacity: 1;
+}
+/* Sección de la imagen con degradado */
+.degradado-imagen {
+  position: relative;
+  overflow: hidden;
+}
+
+.degradado-imagen img.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.degradado-imagen::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Ajusta este valor según el tamaño del degradado que desees */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none;
+}
+
+/* Imágenes superpuestas */
+.overlay-images {
+  position: absolute;
+  top: 10%; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 90%; /* Ajusta el ancho para los márgenes laterales */
+}
+
+.overlay-images .overlay-img {
+  width: 48%; /* Ajusta el tamaño de las imágenes superpuestas */
+  height: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overlay-images .overlay-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .overlay-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay-images .overlay-img {
+    width: 70%; /* Ajusta el ancho en móviles */
+    margin-bottom: 20px; /* Espaciado entre imágenes */
+  }
+}
+
+
 
