@@ -5,6 +5,7 @@
     --text-color-light: white;
     --btn-success-color: #28a745;
 }
+
 .img-navbar {
     margin-bottom: 10px;
 }
@@ -109,17 +110,17 @@ body {
     width: 5%; /* Ancho de los controles de navegación */
   }
   div#carousel-inicio {
-    border-radius: 16px;
-    padding: 1%;
-    margin-top: 16px;
+    border-radius: 0px;
+    padding: 0%;
+    margin-top: 30px;
 }
 
 .carousel-inner {
-    border-radius: 16px;
-    padding: 1%;
+    border-radius: 0px;
+    padding: 0%;
 }
 img.d-block.w-100 {
-    border-radius: 16px;
+    border-radius: 0px;
 }
 h3{
     padding: 5%;
@@ -323,7 +324,7 @@ button.btn.btn-dark.btn-tienda {
   left: 0;
   width: 100%;
   height: 30%; /* Ajusta este valor según el tamaño del degradado que desees */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.671) 100%); */
   pointer-events: none;
 }
 
@@ -360,6 +361,42 @@ button.btn.btn-dark.btn-tienda {
   .overlay-images .overlay-img {
     width: 70%; /* Ajusta el ancho en móviles */
     margin-bottom: 20px; /* Espaciado entre imágenes */
+  }
+}
+.nav-item{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.degradado-imagen {
+  position: relative;
+}
+
+.overlay-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Para que el video no interfiera con la interacción de la imagen */
+}
+
+.video-overlay {
+  width: 100%; /* El video ocupará un cuarto del ancho de la pantalla */
+  max-width: 650px; /* Puedes establecer un tamaño máximo para el video */
+  margin-left: 60%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px; /* Redondea las esquinas si lo deseas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para darle un poco de estilo */
+}
+
+@media (max-width: 768px) {
+  .video-overlay {
+    width: 40%; /* Ajusta el tamaño para pantallas más pequeñas */
   }
 }
 
