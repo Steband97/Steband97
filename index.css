@@ -399,6 +399,19 @@ button.btn.btn-dark.btn-tienda {
     width: 40%; /* Ajusta el tamaño para pantallas más pequeñas */
   }
 }
+@media (max-width: 767.98px) { /* Aplicar solo en pantallas pequeñas */
+  #1-mobile img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+  }
+
+  #1-mobile img:hover {
+    transform: scale(1.05); /* Aumentar un poco la escala al pasar por encima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+  }
+}
+
 
 
 
