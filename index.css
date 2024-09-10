@@ -200,7 +200,7 @@ button.btn.btn-dark {
     padding: 2%;
 }
 h4.tecnologia-drone {
-    margin-top: 40px;
+    margin-top: -20px;
 }
 .video-fluid {
   width: 100%;
@@ -411,6 +411,71 @@ button.btn.btn-dark.btn-tienda {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
   }
 }
+
+
+h1.texto-inicio {
+  text-align: center;
+  margin-top: 30px;
+}
+p.parrafo-inicio {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Estilos generales */
+.titulo {
+  color: black;
+  font-size: 2.5rem; /* Mantener grande para pantallas grandes */
+}
+
+.parrafo-inicio {
+  color: black;
+  font-size: 1rem; /* Tamaño normal en pantallas grandes */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.5rem; /* Reducir tamaño en pantallas pequeñas */
+  }
+
+  .parrafo-inicio {
+    font-size: 0.9rem; /* Reducir el tamaño del párrafo en pantallas pequeñas */
+  }
+}
+
+/* Botones minimalistas */
+.carousel-buttons .btn {
+  border: 1px solid white; /* Bordes más delgados */
+  color: white; /* Texto blanco */
+  padding: 5px 15px; /* Botones más pequeños */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-weight: bold; /* Texto en negrita */
+  background-color: transparent; /* Sin fondo */
+  border-radius: 20px; /* Bordes redondeados */
+  margin-right: 10px; /* Espaciado entre botones */
+  transition: all 0.3s ease-in-out; /* Animación en hover */
+}
+
+.carousel-buttons .btn:hover {
+  background-color: white; /* Fondo blanco al pasar el cursor */
+  color: black; /* Texto negro al pasar el cursor */
+}
+
+/* Alineación de botones */
+.carousel-buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: row; /* Coloca los botones uno al lado del otro */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .carousel-buttons {
+    flex-direction: column; /* Opcional, cambia la dirección en pantallas pequeñas si es necesario */
+  }
+}
+
 
 
 
