@@ -440,7 +440,7 @@ p.parrafo-inicio {
   }
 
   .parrafo-inicio {
-    font-size: 0.9rem; /* Reducir el tamaño del párrafo en pantallas pequeñas */
+    font-size: 1rem; /* Reducir el tamaño del párrafo en pantallas pequeñas */
   }
 }
 
@@ -475,6 +475,62 @@ p.parrafo-inicio {
     flex-direction: column; /* Opcional, cambia la dirección en pantallas pequeñas si es necesario */
   }
 }
+
+/* Estilos para la Galería */
+#galeria {
+  background-color: #f8f9fa; /* Fondo claro */
+}
+
+#galeria h2 {
+  color: #012F46; /* Color del título */
+}
+
+.card {
+  border: none; /* Sin borde en las tarjetas */
+}
+
+.card-img-top {
+  border-radius: 8px; /* Bordes redondeados en las imágenes */
+  transition: transform 0.2s;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.card-text {
+  color: #555; /* Color del texto de descripción */
+}
+
+
+/* Botones para pantallas pequeñas */
+.carousel-buttons-mobile {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.carousel-buttons-mobile a {
+  margin-bottom: 50px;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 25px; /* Bordes redondeados */
+  white-space: nowrap; /* Para evitar que el texto se divida en varias líneas */
+}
+
+/* Media query para modificar los estilos en pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-buttons-mobile a {
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px; /* Bordes redondeados más pequeños para pantallas pequeñas */
+  }
+}
+
+
 
 
 
