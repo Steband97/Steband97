@@ -1,140 +1,550 @@
-p {
-    color: black;
+/* Variables */
+:root {
+    --primary-color: #012F46;
+    --secondary-color: #242f49;
+    --text-color-light: white;
+    --btn-success-color: #28a745;
 }
+
+.img-navbar {
+    margin-bottom: 10px;
+}
+h6{
+    font-size: 18px;
+}
+/* General */
 img {
     vertical-align: middle;
     border-style: none;
     height: 60px;
 }
-
-div#footer {
-    background: #012F46;
+.bg-light {
+    background-color: #f8f9fa00 !important;
+    margin-bottom: -30px;
 }
-
-.mititulo {
-    color: white;
+/* Footer */
+#footer {
+    background-color: var(--secondary-color);
+    padding: 1%;
 }
-
-.horarios {
-    color: white;
-}
-
-p {
-    color: white;
-}
-
-.container {
-    margin-top: 20px;
-    padding: 2%;
-}
-
-a.enlaces {
-    color:  white;
-}
-.w-100 {
-    width: 100% !important;
-    height: 1%;
-}
-a {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: transparent;
-}
-.registrate {
-    color: white;
-}
-p {
-    color: white;
-}
-p.pquienesomos {
-    color: white;
-}
-p.pmision {
-    color: black;
-}
-.mititulo {
-    font-size: 22px;
-    margin-top: 14px;
-}
-button.btn.btn-success {
-    margin-top: 5px;
-}
-.form-control-sm {
-    height: calc(1.5em + .5rem + 2px);
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem;
-    margin-top: 5px;
-}
-p.pvision {
-    color: black;
-}
-.mititulo {
-    font-size: 22px;
-    margin-top: 14px;
-}
-button.btn.btn-success {
-    margin-top: 5px;
-}
-.form-control-sm {
-    height: calc(1.5em + .5rem + 2px);
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem;
-    margin-top: 5px;
-}
-p.pquienessomos {
-    color: black;
-}
-.registrate {
-    font-size: 22px;
-    margin-top: 14px;
-}
-div#titulo {
-    text-align: center;
-}
+.mititulo,
+.horarios,
+p,
+.registrate,
 .mitituloredes {
+    color: var(--text-color-light);
+}
+.mititulo, .registrate, .mitituloredes {
     font-size: 22px;
     margin-top: 14px;
-    color: white;   
-    margin-left: 18px;
 }
 h6 {
-    color: #012F46;
-    text-align: center;
+    color: var(--primary-color);
+
 }
-H1 {
-    color: #012F46;
+/* Botones */
+button.btn-success {
+    margin-top: 5px;
 }
-button.btn.btn-outline-success.my-2.my-sm-0 {
-    height: 35px;
+button.btn-outline-success {
+    margin: 1% 0 2% 0;
 }
-div#FotosTFC {
-    position: relative;
-    height: 100%;
+/* Formularios */
+input[type="email"] {
+    margin-top: 10px;
+}
+li {
+    color: white;
+}
+
+strong {
+    color: white;
+    margin-top: 2%;
+}
+h5 {
+ font-size: 16px;
+ margin-top: 3%;
+}
+.enlaces a {
+    color: white;
+    font-size: 24px; /* Ajusta el tamaño de los iconos si es necesario */
+    margin-right: 10px; /* Espaciado entre los iconos */
+    text-decoration: none; /* Elimina subrayado en los iconos, si hay algún texto adicional */
+  }
+  
+  .enlaces a:hover {
+    color: #f0f0f0; /* Cambia ligeramente el color al pasar el cursor */
+  }
+.imagentfc-footer {
+    margin-top: -7%;
+}
+body {
+    cursor: url('./assets/clic.png'), auto;
+  }
+
+/* Asegura que el carrusel ocupe el 100% del ancho disponible */
+.carousel {
     width: 100%;
+    height: auto;
+  }
+  
+  /* Ajusta la altura de las imágenes para que se vean bien en diferentes tamaños de pantalla */
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Ajusta la posición y el estilo de las descripciones del carrusel */
+  .carousel-caption {
+    bottom: 20px; /* Ajusta la posición vertical si es necesario */
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Estilos de los controles de navegación */
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0); /* Fondo oscuro para los íconos de navegación */
+  }
+  
+  /* Ajusta los márgenes de los controles de navegación */
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Ancho de los controles de navegación */
+  }
+  div#carousel-inicio {
+    border-radius: 0px;
+    padding: 0%;
+    margin-top: 30px;
 }
 
-img.Adriano {
-    width: 40%;
-    height: 0%;
-    margin-left: 30%;
+.carousel-inner {
+    border-radius: 0px;
+    padding: 0%;
+}
+img.d-block.w-100 {
+    border-radius: 0px;
+}
+h3{
+    padding: 5%;
+}
+.img-distribuidores {
+    max-width: 100%; /* Asegura que la imagen no sobrepase el tamaño del contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
     border-radius: 20px;
-    margin-top: 2%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra permanente para la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  }
+  .img-distribuidores:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el cursor */
+  }
+  h4 {
+    text-align: center;
+    margin-bottom: 20px; /* Añade espacio debajo del título */
+    text-shadow: 0px -1px 3px rgb(255 255 255 / 50%); /* Sombra para el texto */
+  }
+  section#\31 {
+    margin-top: 12px;
+    padding: 2%;
 }
-.Text-Adriano {
-    color: black;
+button.btn.btn-dark {
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.img-drone-info {
+    margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para las imágenes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  .img-drone-info:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más profunda en hover */
+  }
+  .alert.alert-danger {
+    background: #C00F1F;
+    height: 45px;
     text-align: center;
 }
 
-.Title-Adriano {
+.video-responsive {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    max-width: 500px; /* Ajusta el tamaño máximo del video para pantallas grandes */
+    border: 2px solid #ddd; /* Opcional: agrega un borde para destacar el video */
+    border-radius: 20px; /* Opcional: agrega bordes redondeados */
+    display: block; /* Asegura que el video se muestre como un bloque */
+    margin: 0 auto; /* Centra el video horizontalmente en su contenedor */
+  }
+  
+  /* Media Query para pantallas grandes */
+  @media (min-width: 992px) { /* Pantallas grandes (escritorios) */
+    .video-responsive {
+      max-width: 600px; /* Ajusta el tamaño máximo del video para pantallas grandes */
+    }
+  }
+  
+  /* Media Query para pantallas de tamaño mediano */
+  @media (min-width: 768px) and (max-width: 991px) { /* Pantallas medianas (tabletas) */
+    .video-responsive {
+      max-width: 500px; /* Tamaño máximo del video para pantallas medianas */
+    }
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 767px) { /* Pantallas pequeñas (teléfonos) */
+    .video-responsive {
+      max-width: 100%; /* Ajusta el video al ancho completo del contenedor */
+    }
+  }
+  section#\32 {
+    margin-top: 20px; 
+    padding: 2%;
+}
+h4.tecnologia-drone {
+    margin-top: -20px;
+}
+.video-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra permanente para la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+.video-fluid:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el cursor */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .tecnologia-drone {
     text-align: center;
-    font-size: 24px;
-    margin-top: 2%;
-    color: #012F46;
+  }
 }
-button.btn.btn-outline-success {
-    margin-top: 1%;
+button.btn.btn-dark.btn-tienda {
+  background: #C00F1F;
+  border: solid 0px;
 }
+.animated-icon {
+  display: inline-block;
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+  width: 35px;
+}
+
+.animated-icon span {
+  background-color: #333;
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  margin: 6px 0;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+}
+.btn-tienda i {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-tienda:hover i {
+  transform: rotate(20deg);
+}
+/* Estilos para el botón de hamburguesa */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.animated-icon {
+  display: inline-block;
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+  width: 35px;
+}
+
+.animated-icon span {
+  background-color: #333;
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  margin: 6px 0;
+  transition: 0.4s ease;
+  width: 100%;
+  position: relative;
+}
+
+/* Estilo de la "X" cuando el menú está desplegado */
+.navbar-toggler:not(.collapsed) .animated-icon span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.navbar-toggler:not(.collapsed) .animated-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .animated-icon span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px;
+}
+
+/* Asegura que cuando esté colapsado (inicialmente) sea hamburguesa */
+.navbar-toggler.collapsed .animated-icon span:nth-child(1),
+.navbar-toggler.collapsed .animated-icon span:nth-child(3) {
+  transform: none;
+  top: 0;
+}
+
+.navbar-toggler.collapsed .animated-icon span:nth-child(2) {
+  opacity: 1;
+}
+/* Sección de la imagen con degradado */
+.degradado-imagen {
+  position: relative;
+  overflow: hidden;
+}
+
+.degradado-imagen img.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.degradado-imagen::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Ajusta este valor según el tamaño del degradado que desees */
+  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.671) 100%); */
+  pointer-events: none;
+}
+
+/* Imágenes superpuestas */
+.overlay-images {
+  position: absolute;
+  top: 10%; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 90%; /* Ajusta el ancho para los márgenes laterales */
+}
+
+.overlay-images .overlay-img {
+  width: 48%; /* Ajusta el tamaño de las imágenes superpuestas */
+  height: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overlay-images .overlay-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .overlay-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay-images .overlay-img {
+    width: 70%; /* Ajusta el ancho en móviles */
+    margin-bottom: 20px; /* Espaciado entre imágenes */
+  }
+}
+.nav-item{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.degradado-imagen {
+  position: relative;
+}
+
+.overlay-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Para que el video no interfiera con la interacción de la imagen */
+}
+
+.video-overlay {
+  width: 100%; /* El video ocupará un cuarto del ancho de la pantalla */
+  max-width: 650px; /* Puedes establecer un tamaño máximo para el video */
+  margin-left: 60%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px; /* Redondea las esquinas si lo deseas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para darle un poco de estilo */
+}
+
+@media (max-width: 768px) {
+  .video-overlay {
+    width: 40%; /* Ajusta el tamaño para pantallas más pequeñas */
+  }
+}
+@media (max-width: 767.98px) { /* Aplicar solo en pantallas pequeñas */
+  #1-mobile img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+  }
+
+  #1-mobile img:hover {
+    transform: scale(1.05); /* Aumentar un poco la escala al pasar por encima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+  }
+}
+
+
+h1.texto-inicio {
+  text-align: center;
+  margin-top: 30px;
+}
+p.parrafo-inicio {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Estilos generales */
+.titulo {
+  color: black;
+  font-size: 2.5rem; /* Mantener grande para pantallas grandes */
+}
+
+.parrafo-inicio {
+  color: black;
+  font-size: 1rem; /* Tamaño normal en pantallas grandes */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.5rem; /* Reducir tamaño en pantallas pequeñas */
+  }
+
+  .parrafo-inicio {
+    font-size: 1rem; /* Reducir el tamaño del párrafo en pantallas pequeñas */
+  }
+}
+
+/* Botones minimalistas */
+.carousel-buttons .btn {
+  border: 1px solid white; /* Bordes más delgados */
+  color: white; /* Texto blanco */
+  padding: 5px 15px; /* Botones más pequeños */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-weight: bold; /* Texto en negrita */
+  background-color: transparent; /* Sin fondo */
+  border-radius: 20px; /* Bordes redondeados */
+  margin-right: 10px; /* Espaciado entre botones */
+  transition: all 0.3s ease-in-out; /* Animación en hover */
+}
+
+.carousel-buttons .btn:hover {
+  background-color: white; /* Fondo blanco al pasar el cursor */
+  color: black; /* Texto negro al pasar el cursor */
+}
+
+/* Alineación de botones */
+.carousel-buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: row; /* Coloca los botones uno al lado del otro */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .carousel-buttons {
+    flex-direction: column; /* Opcional, cambia la dirección en pantallas pequeñas si es necesario */
+  }
+}
+
+/* Estilos para la Galería */
+#galeria {
+  background-color: #f8f9fa; /* Fondo claro */
+}
+
+#galeria h2 {
+  color: #012F46; /* Color del título */
+}
+
+.card {
+  border: none; /* Sin borde en las tarjetas */
+}
+
+.card-img-top {
+  border-radius: 8px; /* Bordes redondeados en las imágenes */
+  transition: transform 0.2s;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.card-text {
+  color: #555; /* Color del texto de descripción */
+}
+
+
+/* Botones para pantallas pequeñas */
+.carousel-buttons-mobile {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.carousel-buttons-mobile a {
+  margin-bottom: 50px;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 25px; /* Bordes redondeados */
+  white-space: nowrap; /* Para evitar que el texto se divida en varias líneas */
+}
+
+/* Media query para modificar los estilos en pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-buttons-mobile a {
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px; /* Bordes redondeados más pequeños para pantallas pequeñas */
+  }
+}
+
+
+/* Transición personalizada para difuminado */
+.carousel-item {
+  transition: opacity 0.6s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+

@@ -11,13 +11,24 @@
   </head>
   <body>
 
-
-        <!-- Barra de navegación -->
-    <div class="barradenavegacion">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="./index.html"><img src="./assets/TechFuCol-Logo-03.png" alt=""></a>
+    <header>
+      <!-- Alerts -->
+      <!-- <div class="alert alert-danger" role="alert">
+        <h6 class="buzzing-text">Cursos de Drones <strong>lo que debes saber</strong></h6>
+      </div> -->
+      
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img class="img-navbar" src="./assets/LOGO TFC.svg" loading="lazy" alt="TechFucol Logo">
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <div class="animated-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -25,30 +36,29 @@
                 <a class="nav-link" href="./index.html"><h6>Inicio</h6><span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./empresarial.html"><h6>Empresarial</h6></a>
+                <a class="nav-link" href="#"><h6>Quiénes Somos</h6></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./quienessomos.html"><h6>Quienes Somos</h6></a>
+                <a class="nav-link" href="#"><h6>Servicios</h6></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./servicios.html"><h6>Servicios</h6></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./tienda.html"><h6>Tienda</h6></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contactanos.html"><h6>Contactanos</h6></a>
+                <a class="nav-link" href="#"><h6>Contáctanos</h6></a>
               </li>
             </ul>
-            <nav class="navbar navbar-light bg-light">
-              <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-              </form>
-            </nav>
+            <!-- Botón Tienda alineado a la derecha -->
+            <div class="ml-auto">
+              <a href="./tienda.html">
+                <button type="button" class="btn btn-dark btn-tienda">
+                  <i class="fas fa-shopping-cart" ></i> <strong style="margin-left: 3px;">  Tienda</strong>
+                </button>
+              </a>
+            </div>
           </div>
-        </nav>
-       </div>
+        </div>
+      </nav>
+    </header>
+
+
          <!-- Quienes Somos -->
        <div class="container">
          <div class="row">
@@ -157,37 +167,59 @@
 
 
         <!-- Footer -->
-    <div id="footer">
-        <div class="container">
-          <div class="row tfcfooter">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-              <div class="mititulo"><img src="./assets/TechFuCol-Logo-03.png" alt=""></div>
-              <p>
-                Te ayudamos a implementar la tecnología dron en los diferentes sectores de la industria.
-              </p>
-            </div>
-            <!-- Redes Sociales -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-              <div class="mitituloredes">Redes Sociales</div>
-              <div class="enlaces">
-                <div class="enlaces"><a href="https://www.facebook.com/Techfucol/"><img src="./assets/Facebook Icono.png" alt="" href="https://www.instagram.com/techfucol/"><img src="./assets/Instagram Icono.png" alt="" href="https://api.whatsapp.com/send/?phone=%2B573023897156&text&type=phone_number&app_absent=0"><img src="./assets/WhatsApp Icono.png" alt=""></a></div>
+        <footer id="footer" class="mt-5">
+          <div class="container">
+            <div class="row tfcfooter">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <div class="mititulo">
+                  <img class="imagentfc-footer" src="./assets/techfucol logo letra blanca.png" alt="TechFucol Logo">
+                </div>
+                <p>
+                  Te ayudamos a implementar la tecnología 
+                  <a href="#" style="color: white;">
+                    <strong>
+                      <i class="fas fa-drone"></i> Drone
+                    </strong>
+                  </a>
+                  en los diferentes sectores de la industria.
+                </p>
+              </div>
+              <!-- Redes Sociales -->
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <h5><strong>Siguenos en nuestras redes:</strong></h5>
+                <div class="enlaces">
+                  <a href="https://www.facebook.com/Techfucol/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/techfucol/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://api.whatsapp.com/send/?phone=%2B573023897156&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Políticas -->
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <h5><strong>Links de interés:</strong></h5>
+                <ul>
+                  <li><a href="#" style="color: white;">Política de tratamiento de datos</a></li>
+                  <li><a href="#" style="color: white;">Aviso de privacidad</a></li>
+                  <li><a href="#" style="color: white;">Reglamento interno</a></li>
+                  <li><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4689.273045309809!2d-75.86260384054219!3d8.767914812128694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5a2b9018ed57a1%3A0xeaf96f0f3f837d74!2sTECHFUCOL%20SAS!5e0!3m2!1ses!2sco!4v1712342110764!5m2!1ses!2sco" style="color: white;">
+                    <i class="fas fa-map-marker-alt"></i> Ubicación
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <h5><strong>Registro:</strong></h5>
+                <input class="form-control form-control-sm" type="email" placeholder="Email" aria-label="Correo Electrónico">
+                <button type="button" class="btn btn-outline-success mt-2">Registrarme</button>
               </div>
             </div>
-            <!-- Horario de atención -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-              <div class="mititulo">Horarios de atención</div>
-              <div class="horarios"> Lunes a Viernes de 8:00 am a 6:00 pm</div>
-              <div class="horarios"> Sabados de 8:00 am a 2:00 pm</div>
-            </div>
-            <!-- Suscribete -->
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-              <div class="registrate">Registrate</div>
-              <input class="form-control form-control-sm" type="text" placeholder="Email">
-              <button type="button" class="btn btn-outline-success">Registrarme</button>
-            </div>
           </div>
-        </div>
-      </div>
+        </footer>
+    
 
 
 
@@ -196,6 +228,7 @@
 
 
     <!-- Optional JavaScript; choose one of the two! -->
+     <script src="./index.js"></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
