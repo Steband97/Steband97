@@ -78,10 +78,6 @@ h5 {
 .imagentfc-footer {
     margin-top: -7%;
 }
-body {
-    cursor: url('./assets/clic.png'), auto;
-  }
-
 /* Asegura que el carrusel ocupe el 100% del ancho disponible */
 .carousel {
     width: 100%;
@@ -125,45 +121,17 @@ img.d-block.w-100 {
 h3{
     padding: 5%;
 }
-.img-distribuidores {
-    max-width: 100%; /* Asegura que la imagen no sobrepase el tamaño del contenedor */
-    height: auto;    /* Mantiene la proporción de la imagen */
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra permanente para la imagen */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-  }
-  .img-distribuidores:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el cursor */
-  }
   h4 {
     text-align: center;
     margin-bottom: 20px; /* Añade espacio debajo del título */
     text-shadow: 0px -1px 3px rgb(255 255 255 / 50%); /* Sombra para el texto */
   }
-  section#\31 {
-    margin-top: 12px;
-    padding: 2%;
-}
+
 button.btn.btn-dark {
     border-radius: 20px;
     margin-right: 10px;
 }
-.img-drone-info {
-    margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para las imágenes */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
-  }
-  
-  .img-drone-info:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más profunda en hover */
-  }
-  .alert.alert-danger {
-    background: #C00F1F;
-    height: 45px;
-    text-align: center;
-}
+
 
 .video-responsive {
     width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
@@ -195,13 +163,7 @@ button.btn.btn-dark {
       max-width: 100%; /* Ajusta el video al ancho completo del contenedor */
     }
   }
-  section#\32 {
-    margin-top: 20px; 
-    padding: 2%;
-}
-h4.tecnologia-drone {
-    margin-top: -20px;
-}
+
 .video-fluid {
   width: 100%;
   height: auto;
@@ -213,43 +175,14 @@ h4.tecnologia-drone {
   transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el cursor */
 }
-
 .img-fluid {
   max-width: 100%;
   height: auto;
-}
-
-@media (max-width: 768px) {
-  .tecnologia-drone {
-    text-align: center;
-  }
-}
-button.btn.btn-dark.btn-tienda {
-  background: #C00F1F;
-  border: solid 0px;
-}
-.animated-icon {
-  display: inline-block;
-  cursor: pointer;
-  height: 30px;
-  position: relative;
-  width: 35px;
-}
-
-.animated-icon span {
-  background-color: #333;
-  border-radius: 2px;
-  display: block;
-  height: 4px;
-  margin: 6px 0;
-  transition: 0.5s ease-in-out;
-  width: 100%;
 }
 .btn-tienda i {
   display: inline-block;
   transition: transform 0.2s ease-in-out;
 }
-
 .btn-tienda:hover i {
   transform: rotate(20deg);
 }
@@ -269,7 +202,7 @@ button.btn.btn-dark.btn-tienda {
 }
 
 .animated-icon span {
-  background-color: #333;
+  background-color: #012f46 ;
   border-radius: 2px;
   display: block;
   height: 4px;
@@ -413,30 +346,31 @@ button.btn.btn-dark.btn-tienda {
 }
 
 
-h1.texto-inicio {
-  text-align: center;
-  margin-top: 30px;
-}
-p.parrafo-inicio {
-  text-align: center;
-  margin-top: 30px;
-}
+
 
 /* Estilos generales */
-.titulo {
-  color: black;
+.titulo-inicio {
+  color: #242f49;
   font-size: 2.5rem; /* Mantener grande para pantallas grandes */
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 .parrafo-inicio {
   color: black;
-  font-size: 1rem; /* Tamaño normal en pantallas grandes */
+  font-size: 1.1rem; /* Tamaño normal en pantallas grandes */
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
-  .titulo {
-    font-size: 1.5rem; /* Reducir tamaño en pantallas pequeñas */
+  .titulo-inicio {
+    font-size: 1.5rem; 
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .parrafo-inicio {
@@ -454,6 +388,7 @@ p.parrafo-inicio {
   background-color: transparent; /* Sin fondo */
   border-radius: 20px; /* Bordes redondeados */
   margin-right: 10px; /* Espaciado entre botones */
+  margin-bottom: 30px;
   transition: all 0.3s ease-in-out; /* Animación en hover */
 }
 
@@ -476,30 +411,19 @@ p.parrafo-inicio {
   }
 }
 
-/* Estilos para la Galería */
-#galeria {
-  background-color: #f8f9fa; /* Fondo claro */
-}
-
-#galeria h2 {
-  color: #012F46; /* Color del título */
-}
-
 .card {
   border: none; /* Sin borde en las tarjetas */
 }
 
 .card-img-top {
   border-radius: 8px; /* Bordes redondeados en las imágenes */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   transition: transform 0.2s;
 }
 
 .card-img-top:hover {
   transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
-}
-
-.card-text {
-  color: #555; /* Color del texto de descripción */
 }
 
 
