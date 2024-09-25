@@ -1,106 +1,35 @@
-img {
-    vertical-align: middle;
-    border-style: none;
-    height: 60px;
+.Cursos-Pilotos{
+    margin-top: 50px;
 }
-
-div#footer {
-    background: #242f49;
+.Cursos-P-img{
+    border-radius: 12PX;
 }
-
-.mititulo {
-    color: white;
-}
-
-.horarios {
-    color: white;
-}
-
-p {
-    color: white;
-}
-
-.container {
-    margin-top: 20px;
-    padding: 2%;
-}
-
-a.enlaces {
-    color:  white;
-}
-.w-100 {
-    width: 100% !important;
-    height: 1%;
-}
-a {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: transparent;
-}
-.registrate {
-    color: white;
-}
-p.ptechfucol {
+.p-Curso-Pilotos{
     color: black;
+    text-align: justify;
 }
-h1.tituloprincipal {
-    font-size: 40px;
+.Li-Curso-Pilotos{
+    color: black;
+    text-align: start;
+    cursor: pointer;
 }
-.mititulo {
-    font-size: 22px;
-    margin-top: 14px;
-}
-button.btn.btn-success {
-    margin-top: 5px;
-}
-.form-control-sm {
-    height: calc(1.5em + .5rem + 2px);
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem;
-    margin-top: 5px;
-}
-p.ptituloservicios {color: black;
-}
-.registrate {
-    font-size: 22px;
-    margin-top: 14px;
-}
-div#titulo {
-    text-align: center;
-}
-.mitituloredes {
-    font-size: 22px;
-    margin-top: 14px;
-    color: white;   
-    margin-left: 18px;
-}
-h6 {
-    color: #012F46;
-    text-align: center;
-}
-button.btn.btn-outline-success.my-2.my-sm-0 {
-    height: 35px;
-}
-button.btn.btn-outline-success {
-    margin-top: 1%;
-}
-h1.tituloservicios {
-    font-size: 2rem;
-    margin-top: 2%;
-    
+.Li-Curso-Pilotos:hover{
+    margin-left: 5px;
+    color: blue;
+    transition: 0.5s;
 }
 
-.ptituloservicios {
-    font-size: 1rem;
+/* Estilos para pantallas de celulares*/
+@media (max-width: 768px) {
+    .Cursos-Pilotos{
+        font-size: 25px;
+        margin-top: 50px;
+    }
+.p-Curso-Pilotos{
+    text-align: start;
+}
+.Cursos-P-img{
+    margin-bottom: 12px;
 }
 
-h1.tituloprincipal {
-    font-size: 2.5rem;
-    color: black;
-}
-h6.ptituloservicios {
-    font-size: 1.2rem;
-    color: black;
-}
+  }
