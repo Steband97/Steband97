@@ -48,19 +48,25 @@
     color: black;
     text-align: start;
     cursor: pointer;
+   
 }
 .Li-Curso-Pilotos:hover{
     margin-left: 5px;
-    color: blue;
     transition: 0.5s;
 }
 
 /* Estilos para pantallas de celulares*/
 @media (max-width: 768px) {
-    .Cursos-Pilotos{
-        font-size: 25px;
-        margin-top: 50px;
-    }
+.Cursos-Pilotos{
+    font-size: x-large;
+    margin-top: 50px;
+    text-align: center
+}
+.curso-pilotos{
+    color: black;
+    text-align: center;
+    font-size: medium;
+}
 .p-Curso-Pilotos{
     text-align: start;
 }
@@ -72,8 +78,19 @@
     margin-left: 5%;
     margin-right: 5%;
     background-color: #000035;
-    margin-top: 2%;
+    margin-top: 10%;
     border-radius: 20px;
 }
+.Li-Curso-Pilotos2{
+    color: black;
+    text-align:initial;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+   
+}
+
+
 
   }
