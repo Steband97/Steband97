@@ -340,8 +340,8 @@ button.btn.btn-dark {
   }
 
   #1-mobile img:hover {
-    transform: scale(1.05); /* Aumentar un poco la escala al pasar por encima */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
 }
 
@@ -450,7 +450,7 @@ button.btn.btn-dark {
   .carousel-buttons-mobile a {
     font-size: 12px;
     padding: 8px 15px;
-    border-radius: 20px; /* Bordes redondeados más pequeños para pantallas pequeñas */
+    border-radius: 20px;
   }
 }
 

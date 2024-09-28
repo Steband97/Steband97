@@ -4,6 +4,42 @@
 .Cursos-P-img{
     border-radius: 12PX;
 }
+.curso-accion{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-promo{
+    background-color: #000035;
+    width: 35%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+.titulo-card{
+    text-align: center;
+    font-size: large;
+    background-color: #c00f1f;
+    border-radius: 12px;
+    padding: 2px;
+    color: white;
+}
+.card-text{
+    color: white;
+}
+.btn-card{
+    width: 100%;
+}
+.Li-Curso-Pilotos-Card{
+    color: white;
+    text-align: start;
+    cursor: pointer;
+}
+.Li-Curso-Pilotos-Card:hover{
+    margin-left: 5px;
+    transition: 0.5s;
+
+}
 .p-Curso-Pilotos{
     color: black;
     text-align: justify;
@@ -30,6 +66,14 @@
 }
 .Cursos-P-img{
     margin-bottom: 12px;
+}
+.card-promo2{
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #000035;
+    margin-top: 2%;
+    border-radius: 20px;
 }
 
   }
