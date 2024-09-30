@@ -12,7 +12,7 @@
     background-color: #000035;
     width: 35%;
     height: 100%;
-    margin-left: 10%;
+    margin-left: 13.5%;
     margin-top: 5%;
     border-radius: 20px;
 }
@@ -47,13 +47,51 @@
 .Li-Curso-Pilotos{
     color: black;
     text-align: start;
-    cursor: pointer;
+    margin-left: 10px;
    
 }
-.Li-Curso-Pilotos:hover{
-    margin-left: 5px;
-    transition: 0.5s;
+.sticky-top {
+  transition: top 0.3s ease-in-out; /* 0.3 segundos de transición */
 }
+
+  /* Transición personalizada para difuminado */
+.carousel-item {
+    transition: opacity 0.5ms ease-in-out;
+    opacity: 0;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+
+  /* Preguntas frecuentes */
+  .card-header{
+    background-color: #649ab9;
+  }
+  .titulo-pf{
+    color: white;
+  }
+
+  /* .container2{
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .container2 img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: all ease-in-out 0.5s;
+
+  }
+  .container2 img:hover{
+    width: 25%;
+  } */
 
 /* Estilos para pantallas de celulares*/
 @media (max-width: 768px) {
@@ -88,9 +126,14 @@
     display: flex;
     align-items: center;
     margin-top: 5px;
-   
 }
-
-
+.Preguntasf-titulo{
+    text-align: center;
+    font-size: x-large;
+    margin-top: 50px;
+}
+.titulo-pf{
+    font-size: medium;
+}
 
   }

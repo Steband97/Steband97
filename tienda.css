@@ -111,9 +111,20 @@ button.btn.btn-dark {
     margin: 1%;
 }
 .tfciconostienda {
+    background-color: black;
+    color: white;
     text-align: center;
     font-size: 11px;
 }
+
+.icon-tienda-t{
+    cursor: pointer;
+}
+.icon-tienda-t:hover{
+    filter: drop-shadow(1px 1px 3px white);
+
+}
+
 .alert-dark {
     color: #ffffff;
     background-color: #B51A2B;
